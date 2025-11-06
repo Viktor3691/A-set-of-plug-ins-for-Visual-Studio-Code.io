@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -391,3 +392,398 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Продвинутый HTML и CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calendar">
+            <div class="calendar-header calendar-month">Октябрь</div>
+            <div class="calendar-body">
+                <div class="calendar-weekday">Вторник</div>
+                <div class="calendar-day">21</div>
+                <div class="calendar-year">2025</div>
+            </div>
+        </div>
+        <script>
+            const now = new Date();
+            const month = now.toLocaleString('default', {month: 'long'});
+            const weekday = now.toLocaleString('default', {weekday: 'long'});
+            const day = now.toLocaleString('default', {day: '2-digit'});
+            const year = now.toLocaleString('default', {year: 'numeric'});
+
+            document.querySelector('.calendar-month').textContent = month;
+            document.querySelector('.calendar-weekday').textContent = weekday;
+            document.querySelector('.calendar-day').textContent = day;
+            document.querySelector('.calendar-year').textContent = year;
+        </script>
+
+        <h1>Продвинутый HTML и CSS</h1>
+
+
+        <h2>5.3 Набор плагинов для Visual Studio Code</h2>
+
+        <p><strong>Для Visual Studio Code (VS Code) доступны плагины, которые расширяют
+                функциональность редактора кода.</strong> Они могут быть посвящены разным темам: повышению
+            продуктивности, форматированию кода, работе с системой контроля версий (Git) или отладке. Ниже
+            представлены некоторые из них.</p>
+
+        <div class="container_text_w">
+            <h3 id="Content1">Содержание</h3>
+
+            <ol>
+                <li><a href="#Content2">Продуктивность</a></li>
+                <li><a href="#Content3">Форматирование</a></li>
+                <li><a href="#Content4">Контроль версий</a></li>
+                <li><a href="#Content5">Отладка</a></li>
+            </ol>
+
+        </div>
+        <br>
+
+        <div class="container_text_w">
+
+            <h3 id="Content2">1. Продуктивность</h3>
+            <ol>
+                <li>
+                    <p><strong><a href="https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode"
+                                target="_blank" rel="noopener noreferrer">HTML Preview</a></strong>
+                        — экономим время на переключение в браузер<br>
+                        <img src="20.png" alt="20" class="pictures">
+                    </p>
+                    <p>Когда вы начинаете верстать страницу, пока не написали стили, но вовсю готовите разметку по
+                        макету, нужно часто
+                        переключать в браузер и проверять, что вы наразмечали. <br>
+                        Это бывает долго и неудобно, особенно если у вас пока один
+                        монитор или вы вообще верстаете на ноутбуке.
+
+                        Плагин HTML Preview решает эту проблему и экономит массу времени — размеченную страницу видно
+                        прямо в окне VS Code, и
+                        превью меняется сразу после очередного сохранения HTML-файла.</p>
+                    <p><strong>Расширение HTML Preview</strong> можно активировать двумя способами:
+                    <ul>
+                        <li>Переключить предварительный просмотр - ctrl+shift+v или cmd+shift+v</li>
+                        <li>Откройте предварительный просмотр сбоку — ctrl+k v или cmd+k v
+                        </li>
+                        <br>
+                    </ul>
+                    <img src="49.png" alt="49" class="pictures">
+                    </p>
+                </li>
+
+
+                <li><strong><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets"
+                            target="_blank" rel="noopener noreferrer">JavaScript (ES6) Code
+                            Snippets</a></strong> — предоставляет сокращения для общих
+                    шаблонов кода JavaScript, что ускоряет разработку и избавляет от повторяющегося набора кода. <br>
+                    <img src="21.png" alt="21" class="pictures">
+                    <p><strong>Поддерживаемые языки</strong>: JavaScript (.js), TypeScript (.ts), JavaScript React
+                        (.jsx), TypeScript React (.tsx), HTML (.html), Vue (.vue).</p>
+                </li>
+
+                <h3>Функции</h3>
+
+                <p>Сниппеты включают шаблоны для функций, классов, модулей и других структур.</p>
+                <ul>
+                    <li><strong>Импорт и экспорт</strong> — сниппеты для импорта всего модуля, импорта части модуля
+                        с помощью destructing и других задач.</li>
+                    <li><strong>Классные помощники</strong> — сниппеты для добавления конструктора в класс, создания
+                        метода внутри класса, свойства-геттера и
+                        свойства-сеттера.</li>
+                    <li><strong>Методы </strong>— сниппеты для цикла forEach в синтаксисе ES6, для цикла for ... of,
+                        для цикла for ... in и других методов.</li>
+                    <li><strong>Методы консоли</strong> — сниппеты для console.log, console.clear, console.count и
+                        других методов.</li>
+                </ul>
+
+                <h3>Особенности:</h3>
+                <ul>
+                    <li>Сниппеты оптимизированы, чтобы быть короткими и легко запоминаться.</li>
+                    <li>Есть возможность изменять и создавать собственные фрагменты кода, адаптируя их к стилю
+                        программирования и требованиям
+                        проекта.</li>
+                </ul>
+
+                <br>
+                <li>
+                    <p><strong><a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight"
+                                target="_blank" rel="noopener noreferrer">Todo Highlight</a></strong> — выделяет
+                        комментарии к TODO в коде, упрощает поиск
+                        задач и напоминаний в больших кодовых базах.</p>
+                    <img src="22.png" alt="22" class="pictures">
+
+                    <h3>Некоторые возможности расширения:</h3>
+
+                    <ul>
+                        <li><strong>Настройка ключевых слов и цветов подсветки. </strong>Пользователи могут определять
+                            свои ключевые слова и назначать им
+                            определённые цвета для лучшей категоризации.</li>
+                        <li><strong>Подсветка в нескольких файлах. </strong>Поддерживается выделение комментариев в
+                            разных файлах рабочего пространства.</li>
+                        <li><strong>Список задач с возможностью поиска.</strong> Интегрируется с палитрой команд для
+                            быстрого поиска и списка всех выделенных
+                            комментариев в текущем рабочем пространстве.</li>
+                        <li><strong>Гибкая конфигурация. </strong>Предлагает конфигурацию через файлы настроек, что
+                            позволяет разработчикам адаптировать расширение к стандартам команды или личным рабочим
+                            процессам.</li>
+                        <li><strong>Оптимизированность и скорость.</strong> Расширение оптимизировано для скорости и не
+                            влияет на общую производительность редактора, даже в больших базах кода.</li>
+                    </ul>
+                    <p><strong>Кому подойдёт: </strong>разработчикам, которые оставляют заметки в коде, и командам,
+                        которым нужно быстро находить задачи или
+                        недочёты в проекте.</p>
+                </li>
+            </ol>
+            <p><a href="#Content1">&lt;&lt;&lt;</a></p>
+        </div>
+        <br>
+
+        <div class="container_text_w">
+
+            <h3 id="Content3">2. Форматирование</h3>
+
+            <ol>
+                <li>
+                    <p><strong><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                                target="_blank" rel="noopener noreferrer">Prettier</a></strong> — автоматически
+                        форматирует код, поддерживает множество
+                        языков программирования и может быть настроен под стиль проекта.</p>
+                    <img src="23.png" alt="23" class="pictures">
+
+                    <h3>Особенности:</h3>
+                    <ul>
+                        <li>Поддерживает множество языков программирования и шаблонов, включая JavaScript, TypeScript,
+                            Flow, JSX, JSON, CSS, SCSS,
+                            Less, HTML, Vue, Angular и другие.</li>
+                        <li>Интегрируется с большинством текстовых редакторов и систем контроля версий.</li>
+                    </ul>
+
+                    <h3>Функции</h3>
+
+                    <ul>
+                        <li><strong>Автоматическое исправление кода</strong> по заданным правилам форматирования.
+                            Например, Prettier добавляет нужные отступы, точки
+                            с запятыми, разбивает длинные строки на более короткие блоки.</li>
+                        <li><strong>Настройка форматирования</strong> — ширина отступов, предпочтение одинарных или
+                            двойных кавычек, расстановка запятых и требования к переносам строк.</li>
+                        <li><strong>Игнорирование определённых файлов и директорий</strong> — через файл
+                            .prettierignore.</li>
+                        <li><strong>Автоматическое форматирование при коммитах</strong> — для проектов, использующих
+                            системы контроля версий, например Git, можно настроить хуки, которые применяют Prettier к
+                            коду перед каждым коммитом.</li>
+                    </ul>
+
+                    <h3>Установка</h3>
+
+                    <ul>
+                        <li><strong>Добавить пакет Prettier</strong> в проект через npm или yarn.</li>
+                        <li><strong>Создать пустой файл конфигурации</strong> — это позволяет редакторам и другим
+                            инструментам знать, что используется Prettier.</li>
+                        <li><strong>Создать файл .prettierignore</strong> — он даёт Prettier CLI и редакторам знать,
+                            какие файлы не форматировать.</li>
+                    </ul>
+
+                    <h3>Настройка</h3>
+
+                    <ul>
+                        <li><strong>Определить стандартное поведение форматтера</strong> для проекта — это делается
+                            через файл .prettierrc.</li>
+                        <li><strong>Настроить правила форматирования</strong> — можно изменить распространённые
+                            параметры или создать отдельный файл конфигурации.</li>
+                        <li><strong>Включить форматирование при сохранении </strong>— например, в настройках редактора
+                            можно отметить чекбокс, чтобы форматирование происходило автоматически при сохранении файла.
+                        </li>
+                    </ul>
+                    <h3>Интеграция </h3>
+
+                    <ul>
+                        <li><strong>Интегрировать Prettier в текстовый редактор</strong> — через плагины и расширения.
+                            Например, для Visual Studio Code доступно расширение «Prettier — Code formatter».</li>
+                        <li><strong>Настроить хуки для проектов</strong>, использующих системы контроля версий, — они
+                            будут применять Prettier к коду перед каждым коммитом.</li>
+                        <li><strong>Реализовать сценарии форматирования как часть рабочего процесса</strong> — это
+                            поможет гарантировать, что каждое развёртывание будет автоматически отформатировано.</li>
+                    </ul>
+
+                </li>
+                <br>
+
+                <li>
+                    <p><strong><a
+                                href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense"
+                                target="_blank" rel="noopener noreferrer">Path Intellisense</a></strong> — предлагает
+                        автодополнение для путей к файлам в
+                        коде, что упрощает навигацию и ссылки на файлы внутри проекта.</p>
+                    <img src="24.png" alt="24" class="pictures">
+                </li>
+                <h3>Функции</h3>
+
+                <p>Расширение динамически предлагает пути к файлам и имена каталогов по мере ввода. Это помогает:</p>
+                <ul>
+                    <li><strong>Ускорить написание адресов файлов в коде,</strong> например, при установке специального
+                        тега, подразумевающего вставку файла.</li>
+                    <li><strong>Минимизировать ошибки</strong> из-за неполных или неправильных путей к файлам.</li>
+                </ul>
+                <p><strong>Важно:</strong> хотя VS Code поддерживает автозавершение путей и без расширений, эта
+                    возможность ограничена только HTML-, CSS- и JavaScript-файлами. Благодаря Path Intellisense
+                    автозавершением путей можно пользоваться при работе с любыми файлами и
+                    любыми языками.</p>
+
+                <h3>Настройка</h3>
+
+                <p><strong>Некоторые настройки расширения:</strong></p>
+                <ul>
+                    <li><strong>Включить расширение файла в операторах импорта</strong> — по умолчанию Path Intellisense
+                        удаляет расширение файла, если оператор — оператор импорта. Чтобы включить расширение, нужно
+                        установить настройку
+                        path-intellisense.extensionOnImport: true.</li>
+                    <li><strong>Показывать скрытые файлы</strong> — по умолчанию скрытые файлы не отображаются, нужно
+                        установить настройку path-intellisense.showHiddenFiles: true.</li>
+                    <li><strong>Автоматически добавлять слэш при переходе в папку</strong> — по умолчанию автозаполнение
+                        не добавляет слэш после каталога, нужно установить настройку
+                        path-intellisense.autoSlashAfterDirectory: false.</li>
+                    <li><strong>Разрешать абсолютные пути</strong> — по умолчанию абсолютные пути разрешаются в корневом
+                        пути текущей рабочей области, нужно установить настройку
+                        path-intellisense.absolutePathToWorkspace: true.</li>
+                </ul>
+
+            </ol>
+            <p><a href="#Content1">&lt;&lt;&lt;</a></p>
+        </div>
+        <br>
+
+        <div class="container_text_w">
+
+            <h3 id="Content4">3. Контроль версий</h3>
+
+            <ol>
+                <li><strong><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"
+                            target="_blank" rel="noopener noreferrer">GitLens</a></strong>— расширяет стандартные
+                    возможности Git в VS Code,
+                    предоставляет информацию о том, кто и когда вносил изменения, отображает историю коммитов.
+                    <img src="25.png" alt="25" class="pictures">
+                    <br>
+                    Некоторые функции:
+                    <ul>
+                        <li>аннотации для кода, показывающие автора, дату и сообщение о последнем изменении в каждой
+                            строке;</li>
+                        <li>навигация по коду, возможность быстро перейти к истории файла или перемещаться по изменениям
+                            в файле со временем;</li>
+                        <li>сравнение различий между двумя версиями файла.</li>
+                    </ul>
+
+                </li>
+            </ol>
+            <p><a href="#Content1">&lt;&lt;&lt;</a></p>
+        </div>
+        <br>
+
+        <div class="container_text_w">
+
+            <h3 id="Content5">4. Отладка</h3>
+
+            <ol>
+                <li>
+                    <p><strong><a
+                                href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome"
+                                target="_blank" rel="noopener noreferrer">Debugger for Chrome</a></strong> —
+                        расширение для Visual Studio Code, которое
+                        позволяет отлаживать JavaScript-код, запущенный в Google Chrome, прямо из редактора. Расширение
+                        работает с использованием протокола Chrome DevTools, который позволяет сопоставлять файлы,
+                        загруженные в браузере, с файлами, открытыми в VS Code.</p>
+                    <img src="26.png" alt="26" class="pictures">
+
+                    <h3>Функции</h3>
+
+                    <p>Расширение позволяет:</p>
+                    <ul>
+                        <li><strong>Устанавливать точки останова</strong> в исходном коде, включая файлы с включёнными
+                            картами источников.</li>
+                        <li><strong>Пошагово отлаживать код</strong> с помощью кнопок на странице Chrome.</li>
+                        <li><strong>Отлаживать скрипты eval</strong>, теги скриптов и скрипты, которые добавляются
+                            динамически</li>
+                        <li><strong>Видеть полный стек </strong>вызовов при отладке.</li>
+                    </ul>
+
+                    <h3>Настройка</h3>
+
+                    <p>Для работы отладчика нужно создать <strong>файл конфигурации launch.json</strong> в корневом
+                        каталоге проекта. Можно создать этот файл вручную или VS Code создаст его автоматически, если
+                        при запуске проекта файл не существует.</p>
+                    <p><strong>Некоторые особенности настройки:</strong></p>
+                    <ul>
+                        <li><strong>Режим launch</strong> — отладчик запускает экземпляр Chrome, запущенный по
+                            указанному файлу или URL. Если указан URL, нужно
+                            указать каталог, из которого обслуживаются файлы (можно использовать абсолютный путь или
+                            путь с использованием
+                            ${workspaceFolder} — папки, открытой в VS Code).</li>
+                        <li><strong>Режим attach</strong> — отладчик присоединяется к уже работающему экземпляру Chrome.
+                            Для этого нужно запустить Chrome с
+                            включённой удалённой отладкой.</li>
+                    </ul>
+                    <p><strong>Запуск отладчика</strong> можно выбрать в выпадающем списке на панели отладки в VS Code и
+                        нажать кнопку
+                        Play или F5.</p>
+
+                </li>
+                <br>
+                <li>
+                    <p><strong><a
+                                href="https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log"
+                                target="_blank" rel="noopener noreferrer">Turbo Console Log </a></strong>—
+                        расширение для Visual Studio Code, которое
+                        автоматизирует создание сообщений console.log в коде. Оно упрощает процесс отладки, избавляя от
+                        ручного добавления журнальных сообщений.</p>
+                    <img src="27.png" alt="27" class="pictures">
+
+                    <h3>Функции</h3>
+                    <ul>
+                        <li>Автоматическое создание сообщения console.log для выделенной переменной. Расширение
+                            генерирует сообщение, которое включает имя переменной и её значение.</li>
+                        <li>Поддержка нескольких переменных — можно отлаживать несколько переменных одновременно.</li>
+                        <li>Возможность включать в сообщение имя функции или класса, который содержит переменную. Это
+                            добавляет контекс</li>
+                        <li>Горячие клавиши для управления сообщениями: комментарий, uncomment, удаление. Например:
+                            <ul>
+                                <li><strong>Ctrl + Alt + L</strong> — создаёт console.log для выделенной переменной.
+                                </li>
+                                <li><strong>Ctrl + Alt + D </strong>— удаляет все console.log из файла</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>Настройка</h3>
+
+                    <p>После установки расширения можно настроить его параметры под свои нужды.
+                        <br>Некоторые возможности:
+                    </p>
+                    <ul>
+                        <li><strong>Изменение префикса</strong> для сообщения. Расширение поддерживает разные символы и
+                            символы в качестве префиксов.</li>
+                        <li><strong>Включение номеров файла и строки.</strong></li>
+                        <li><strong>Изменение разделителя.</strong></li>
+                        <li><strong>Автоматическое добавление точек с запятой</strong> в конце сообщений, что избавляет
+                            от необходимости делать это вручную.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><a href="#Content1">&lt;&lt;&lt;</a></p>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br>
+</body>
+
+</html>
+>>>>>>> f7fca38edaccb59f5c4043296f1db0d96f304c2a
